@@ -9,7 +9,7 @@
   };
   firebase.initializeApp(config);
 
-var databse + firebase.database();
+var databse = firebase.database();
 
 $("#add-train-btn").on("click", function(event) {
   event.preventDefault();
@@ -53,5 +53,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   console.log(trTime);
   console.log(trFreq);
 
-  var
+  var trTimePretty = moment.unix(trTime).format("HH:mm");
+
+  //Determine the 
 })
